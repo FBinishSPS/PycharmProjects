@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-light-grey">
+    <div class="w3-container w3-padding-64 w3-center">
+        <h1 class="w3-text-blue">Welcome, {{ user }}!</h1>
+        <p class="w3-text-dark-grey">You are {{ age }} years old.</p>
+        <!-- Add the welcome image -->
+        <img src="../../../../../../../../Desktop/WELCOME.jpg" height="941" width="1920"/><img src="{{ url_for('static', filename='WELCOME.jpg') }}" alt="Welcome Image" class="w3-image w3-margin-top w3-round-large">
+        <br>
+        <!-- Logout button -->
+        <a href="{{ url_for('logout') }}" class="w3-button w3-blue w3-round-large w3-margin-top">Logout</a>
+    </div>
+</body>
+</html>
